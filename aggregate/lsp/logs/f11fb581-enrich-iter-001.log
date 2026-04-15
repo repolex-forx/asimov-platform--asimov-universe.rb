@@ -1,0 +1,14 @@
+[2026-04-15T15:34:35Z] === ENRICH ITERATION 1 START | repo=asimov-platform/asimov-universe.rb sha=f11fb581 ===
+[2026-04-15T15:34:35Z] [iter=1] PHASE START: enrich repo=asimov-platform/asimov-universe.rb sha=f11fb581 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/f11fb581-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/f11fb581d4fc2cdcf9ed248129ca60dbe2ad875e.nq.gz
+[2026-04-15T15:34:35Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-15T15:34:35Z] [iter=1] AST store loaded triples=1712 load_secs=0 mem_mb=85 MB
+[2026-04-15T15:34:35Z] [iter=1] Step 2: Finding LSP targets mem_mb=85 MB
+[2026-04-15T15:34:35Z] [iter=1] LSP targets found call_sites=28 imports=0 extends=0 implements=0 secs=0
+[2026-04-15T15:34:35Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=85 MB
+[2026-04-15T15:34:35Z] [iter=1] Position index built positions=121 nodes_with_types=166 secs=0 mem_mb=85 MB
+[2026-04-15T15:34:35Z] [iter=1] Step 3: Starting LSP resolution mem_mb=85 MB already_completed_types=[] already_completed_files=0
+[2026-04-15T15:34:35Z] [iter=1] Resolving target type target_type=call_site count=28
+[2026-04-15T15:34:41Z] [iter=1] Target type resolved target_type=call_site resolved=8 errors=20 secs=6 mem_mb=87 MB
+[2026-04-15T15:34:43Z] [iter=1] Step 5: Writing final enrichment file triples=198
+[2026-04-15T15:34:43Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/f11fb581d4fc2cdcf9ed248129ca60dbe2ad875e.nq.gz size_kb=2
+[2026-04-15T15:34:43Z] [iter=1] PHASE END: enrich elapsed_s=8 elapsed_min=0.1 total_triples=198
